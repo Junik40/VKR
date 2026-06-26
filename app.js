@@ -1,6 +1,124 @@
 (function () {
   "use strict";
 
+  var PROBLEM_LEVELS = ["school", "oge", "ege", "uni"];
+
+  function appendParts(parent, parts) {
+    parts.forEach(function (part) {
+      if (part.type === "text" || part.type === "html") {
+        if (part.html.indexOf("<") !== -1) {
+          var wrap = document.createElement("span");
+          wrap.innerHTML = part.html;
+          while (wrap.firstChild) parent.appendChild(wrap.firstChild);
+        } else {
+          parent.appendChild(document.createTextNode(part.html));
+        }
+        return;
+      }
+      if (part.type === "math-inline") {
+        var inline = document.createElement("span");
+        inline.className = "math-inline";
+        inline.setAttribute("data-latex", part.latex);
+        parent.appendChild(inline);
+      }
+    });
+  }
+
+  function appendBlocks(container, blocks) {
+    blocks.forEach(function (block) {
+      if (block.type === "paragraph") {
+        var p = document.createElement("p");
+        appendParts(p, block.parts);
+        container.appendChild(p);
+        return;
+      }
+      if (block.type === "math-display") {
+        var display = document.createElement("div");
+        display.className = "math-display";
+        display.setAttribute("data-latex", block.latex);
+        container.appendChild(display);
+        return;
+      }
+      if (block.type === "list") {
+        var list = document.createElement(block.ordered ? "ol" : "ul");
+        block.items.forEach(function (itemParts) {
+          var li = document.createElement("li");
+          appendParts(li, itemParts);
+          list.appendChild(li);
+        });
+        container.appendChild(list);
+      }
+    });
+  }
+
+  function renderProblem(problem) {
+    var article = document.createElement("article");
+    article.className = "problem";
+
+    var title = document.createElement("h4");
+    title.className = "problem__name";
+    title.textContent = problem.name;
+    article.appendChild(title);
+
+    problem.statement.forEach(function (block) {
+      if (block.type !== "paragraph") return;
+      var p = document.createElement("p");
+      p.className = "problem-text";
+      appendParts(p, block.parts);
+      article.appendChild(p);
+    });
+
+    var btnId = "btn-sol-" + problem.id;
+    var solId = "sol-" + problem.id;
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "solution-toggle";
+    btn.id = btnId;
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-controls", solId);
+    btn.textContent = "Показать решение";
+    article.appendChild(btn);
+
+    var solution = document.createElement("div");
+    solution.className = "solution";
+    solution.id = solId;
+    solution.setAttribute("role", "region");
+    solution.setAttribute("aria-labelledby", btnId);
+    solution.hidden = true;
+
+    var heading = document.createElement("h4");
+    heading.className = "solution__heading";
+    heading.textContent = "Решение";
+    solution.appendChild(heading);
+
+    appendBlocks(solution, problem.solution);
+    article.appendChild(solution);
+
+    return article;
+  }
+
+  function loadProblems() {
+    return Promise.all(
+      PROBLEM_LEVELS.map(function (level) {
+        return fetch("problems/" + level + ".json")
+          .then(function (res) {
+            if (!res.ok) throw new Error(level + ".json: " + res.status);
+            return res.json();
+          })
+          .then(function (data) {
+            var panel = document.getElementById("subpanel-" + level);
+            if (!panel) return;
+            data.problems.forEach(function (problem) {
+              panel.appendChild(renderProblem(problem));
+            });
+          });
+      }),
+    ).then(function () {
+      renderMath();
+    });
+  }
+
   function renderMath() {
     var inlineOpts = { throwOnError: false };
     var displayOpts = { throwOnError: false, displayMode: true };
@@ -79,8 +197,11 @@
     });
   });
 
-  document.querySelectorAll(".solution-toggle").forEach(function (btn) {
-    btn.addEventListener("click", function () {
+  var problemsPanel = document.getElementById("panel-problems");
+  if (problemsPanel) {
+    problemsPanel.addEventListener("click", function (e) {
+      var btn = e.target.closest(".solution-toggle");
+      if (!btn) return;
       var id = btn.getAttribute("aria-controls");
       if (!id) return;
       var panel = document.getElementById(id);
@@ -93,10 +214,10 @@
       } else {
         panel.setAttribute("hidden", "");
         btn.setAttribute("aria-expanded", "false");
-        btn.textContent = "Показать ответ";
+        btn.textContent = "Показать решение";
       }
     });
-  });
+  }
 
   async function generateAndDownloadPDF() {
     const btn = document.getElementById("download-cheatsheet-btn");
@@ -567,6 +688,9 @@
     if (downloadBtn) {
       downloadBtn.addEventListener("click", generateAndDownloadPDF);
     }
+    loadProblems().catch(function (err) {
+      console.error("Не удалось загрузить задачи:", err);
+    });
   });
 
   renderMath();

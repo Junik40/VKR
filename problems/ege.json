@@ -1,0 +1,1741 @@
+{
+  "level": "ege",
+  "problems": [
+    {
+      "id": "ege-1",
+      "name": "Задача 1. Задание 12 (ЕГЭ-2024). Сведение к квадратному уравнению",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "а) Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2\\cos^2 x + \\sin x + 1 = 0"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br> б) Найдите все корни этого уравнения, принадлежащие отрезку "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\left[-3\\pi;\\, -2\\pi\\right]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>а)</strong> Заменим "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos^2 x = 1 - \\sin^2 x"
+            },
+            {
+              "type": "text",
+              "html": ". Получим:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "2(1 - \\sin^2 x) + \\sin x + 1 = 0"
+        },
+        {
+          "type": "math-display",
+          "latex": "-2\\sin^2 x + \\sin x + 3 = 0"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Умножим на -1: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2\\sin^2 x - \\sin x - 3 = 0"
+            },
+            {
+              "type": "text",
+              "html": ". Сделаем замену "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t = \\sin x"
+            },
+            {
+              "type": "text",
+              "html": ", где "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t \\in [-1; 1]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "2t^2 - t - 3 = 0"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Дискриминант "
+            },
+            {
+              "type": "math-inline",
+              "latex": "D = 1 + 24 = 25"
+            },
+            {
+              "type": "text",
+              "html": ", корни: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t_1 = \\frac{1+5}{4} = 1.5"
+            },
+            {
+              "type": "text",
+              "html": " (не подходит), "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t_2 = \\frac{1-5}{4} = -1"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Возвращаемся к переменной: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = -1"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "x = -\\frac{\\pi}{2} + 2\\pi k,\\ k \\in \\mathbb{Z}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>б)</strong> Отбор корней. На отрезке "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[-3\\pi; -2\\pi]"
+            },
+            {
+              "type": "text",
+              "html": " нужно найти целые "
+            },
+            {
+              "type": "math-inline",
+              "latex": "k"
+            },
+            {
+              "type": "text",
+              "html": ", при которых "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x"
+            },
+            {
+              "type": "text",
+              "html": " попадает в этот промежуток."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "html": "При "
+              },
+              {
+                "type": "math-inline",
+                "latex": "k = -1"
+              },
+              {
+                "type": "text",
+                "html": ": "
+              },
+              {
+                "type": "math-inline",
+                "latex": "x = -\\frac{\\pi}{2} - 2\\pi = -\\frac{5\\pi}{2} = -2.5\\pi"
+              },
+              {
+                "type": "text",
+                "html": "."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "html": "При "
+              },
+              {
+                "type": "math-inline",
+                "latex": "k = -2"
+              },
+              {
+                "type": "text",
+                "html": ": "
+              },
+              {
+                "type": "math-inline",
+                "latex": "x = -\\frac{\\pi}{2} - 4\\pi = -\\frac{9\\pi}{2} = -4.5\\pi"
+              },
+              {
+                "type": "text",
+                "html": " (меньше "
+              },
+              {
+                "type": "math-inline",
+                "latex": "-3\\pi"
+              },
+              {
+                "type": "text",
+                "html": ", не подходит)."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "html": "При "
+              },
+              {
+                "type": "math-inline",
+                "latex": "k = 0"
+              },
+              {
+                "type": "text",
+                "html": ": (больше "
+              },
+              {
+                "type": "math-inline",
+                "latex": "-2\\pi"
+              },
+              {
+                "type": "text",
+                "html": ", не подходит)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> а) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = -\\frac{\\pi}{2} + 2\\pi k,\\ k \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "; б) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "-\\frac{5\\pi}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=505560\" target=\"_blank\">Решу ЕГЭ: Задание № 505560</a> (Банк ФИПИ)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-2",
+      "name": "Задача 2. Задание 11 (ЕГЭ). Точки экстремума тригонометрической функции",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите точку максимума функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = 2x - \\frac{5}{2}\\sin x + 9"
+            },
+            {
+              "type": "text",
+              "html": " на отрезке "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\left[0; \\frac{\\pi}{2}\\right]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдём производную функции: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y' = 2 - \\frac{5}{2}\\cos x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Приравняем производную к нулю для нахождения критических точек:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "2 - \\frac{5}{2}\\cos x = 0 \\quad \\Rightarrow \\quad \\frac{5}{2}\\cos x = 2 \\quad \\Rightarrow \\quad \\cos x = \\frac{4}{5}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\cos x = 0.8"
+            },
+            {
+              "type": "text",
+              "html": " имеет два корня на отрезке "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[0; \\pi/2]"
+            },
+            {
+              "type": "text",
+              "html": ": "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\arccos(0.8)"
+            },
+            {
+              "type": "text",
+              "html": ". Второй корень "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = 2\\pi - \\arccos(0.8)"
+            },
+            {
+              "type": "text",
+              "html": " не входит в наш промежуток."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Определим знак производной. На интервале "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[0; \\arccos(0.8))"
+            },
+            {
+              "type": "text",
+              "html": " 0.8\">, значит 0\">. На интервале "
+            },
+            {
+              "type": "math-inline",
+              "latex": "(\\arccos(0.8); \\pi/2]"
+            },
+            {
+              "type": "text",
+              "html": " "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x < 0.8"
+            },
+            {
+              "type": "text",
+              "html": ", значит "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y' < 0"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Производная меняет знак с \"+\" на \"-\", следовательно, "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\arccos(0.8)"
+            },
+            {
+              "type": "text",
+              "html": " — точка максимума."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\arccos 0.8"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=27495\" target=\"_blank\">Решу ЕГЭ: Задание № 27495</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-3",
+      "name": "Задача 3. Задание 12 (ЕГЭ). Однородное уравнение 2-й степени",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "а) Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 2x - \\sqrt{3}\\cos 2x = \\sqrt{3}"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br> б) Найдите корни этого уравнения, принадлежащие отрезку "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\left[-\\frac{3\\pi}{2}; \\pi\\right]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>а)</strong> Используем метод введения вспомогательного угла. Разделим уравнение на "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sqrt{1^2 + (\\sqrt{3})^2} = 2"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{1}{2}\\sin 2x - \\frac{\\sqrt{3}}{2}\\cos 2x = \\frac{\\sqrt{3}}{2}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Заметим, что "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}, \\cos\\frac{\\pi}{3} = \\frac{1}{2}"
+            },
+            {
+              "type": "text",
+              "html": ". Получим:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin 2x \\cos\\frac{\\pi}{3} - \\cos 2x \\sin\\frac{\\pi}{3} = \\sin\\frac{\\pi}{3}"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin\\left(2x - \\frac{\\pi}{3}\\right) = \\sin\\frac{\\pi}{3}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Решаем простейшее уравнение: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2x - \\frac{\\pi}{3} = \\frac{\\pi}{3} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": " или "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2x - \\frac{\\pi}{3} = \\pi - \\frac{\\pi}{3} + 2\\pi n"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "1) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2x = \\frac{2\\pi}{3} + 2\\pi k \\Rightarrow x = \\frac{\\pi}{3} + \\pi k"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "2) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2x = \\pi + 2\\pi n \\Rightarrow x = \\frac{\\pi}{2} + \\pi n"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>б)</strong> Отбор корней на "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[-\\frac{3\\pi}{2}; \\pi]"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "html": "Из серии "
+              },
+              {
+                "type": "math-inline",
+                "latex": "x = \\pi/3 + \\pi k"
+              },
+              {
+                "type": "text",
+                "html": ": (k=-1), (k=0)."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "html": "Из серии "
+              },
+              {
+                "type": "math-inline",
+                "latex": "x = \\pi/2 + \\pi n"
+              },
+              {
+                "type": "text",
+                "html": ": (n=-2), (n=-1), (n=0)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> а) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\pi}{3} + \\pi k,\\ \\frac{\\pi}{2} + \\pi n, k,n \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "; б) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "-\\frac{3\\pi}{2}, -\\frac{2\\pi}{3}, -\\frac{\\pi}{2}, \\frac{\\pi}{3}, \\frac{\\pi}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=507599\" target=\"_blank\">Решу ЕГЭ: Задание № 507599</a> (Аналог демоверсии)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-4",
+      "name": "Задача 4. Задание 12 (ЕГЭ). Уравнение с модулем тригонометрической функции",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "а) Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "|\\cos x| = \\sin 2x - \\cos x"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br> б) Найдите корни этого уравнения, принадлежащие отрезку "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\left[\\frac{3\\pi}{2}; 3\\pi\\right]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>а)</strong> Раскроем модуль. Рассмотрим два случая."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Случай 1:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x \\ge 0"
+            },
+            {
+              "type": "text",
+              "html": ". Тогда "
+            },
+            {
+              "type": "math-inline",
+              "latex": "|\\cos x| = \\cos x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Уравнение: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x = \\sin 2x - \\cos x \\Rightarrow 2\\cos x = 2\\sin x\\cos x \\Rightarrow 2\\cos x(1 - \\sin x) = 0"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Корни: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x = 0 \\Rightarrow x = \\pi/2 + \\pi k"
+            },
+            {
+              "type": "text",
+              "html": " или "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = 1 \\Rightarrow x = \\pi/2 + 2\\pi n"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br>Объединяя с условием "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x \\ge 0"
+            },
+            {
+              "type": "text",
+              "html": ", получим: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\pi/2 + 2\\pi m"
+            },
+            {
+              "type": "text",
+              "html": " и "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = -\\pi/2 + 2\\pi m"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Случай 2:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x < 0"
+            },
+            {
+              "type": "text",
+              "html": ". Тогда "
+            },
+            {
+              "type": "math-inline",
+              "latex": "|\\cos x| = -\\cos x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Уравнение: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "-\\cos x = \\sin 2x - \\cos x \\Rightarrow 0 = 2\\sin x\\cos x \\Rightarrow \\sin x\\cos x = 0"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Корни: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = 0 \\Rightarrow x = \\pi k"
+            },
+            {
+              "type": "text",
+              "html": " или "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x = 0"
+            },
+            {
+              "type": "text",
+              "html": ". С условием "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos x < 0"
+            },
+            {
+              "type": "text",
+              "html": " работают только точки "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\pi + 2\\pi m"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>б)</strong> Отбор на "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[3\\pi/2; 3\\pi]"
+            },
+            {
+              "type": "text",
+              "html": ": , ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> а) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\pm \\frac{\\pi}{2} + 2\\pi k,\\ \\pi + 2\\pi k, k \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "; б) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{5\\pi}{2},\\ 3\\pi"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=517216\" target=\"_blank\">Решу ЕГЭ: Задание № 517216</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-5",
+      "name": "Задача 5. Задание 12 (ЕГЭ). Тригонометрическое неравенство",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "а) Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos 3x + \\sin 3x = \\cos x + \\sin x"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br> б) Найдите корни этого уравнения, принадлежащие отрезку "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\left[0; \\frac{5\\pi}{2}\\right]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>а)</strong> Перенесём все члены влево и сгруппируем:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "(\\cos 3x - \\cos x) + (\\sin 3x - \\sin x) = 0"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем формулы разности тригонометрических функций:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "-2\\sin 2x \\sin x + 2\\cos 2x \\sin x = 0"
+        },
+        {
+          "type": "math-display",
+          "latex": "2\\sin x (\\cos 2x - \\sin 2x) = 0"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "1) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = 0 \\Rightarrow x = \\pi k"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "2) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos 2x - \\sin 2x = 0 \\Rightarrow \\operatorname{tg} 2x = 1 \\Rightarrow 2x = \\pi/4 + \\pi n \\Rightarrow x = \\pi/8 + \\pi n/2"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>б)</strong> Отбор корней: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "0, \\pi, 2\\pi, \\pi/8, 5\\pi/8, 9\\pi/8, 13\\pi/8, 17\\pi/8"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> а) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\pi k,\\ \\pi/8 + \\pi n/2"
+            },
+            {
+              "type": "text",
+              "html": "; б) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "0, \\pi/8, \\pi, 5\\pi/8, 9\\pi/8, 13\\pi/8, 2\\pi, 17\\pi/8"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=527813\" target=\"_blank\">Решу ЕГЭ: Задание № 527813</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-6",
+      "name": "Задача 6. Задание 9. Тригонометрические уравнения и неравенства",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = \\frac{\\sqrt{3}}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Общее решение простейшего тригонометрического уравнения "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = a"
+            },
+            {
+              "type": "text",
+              "html": " при "
+            },
+            {
+              "type": "math-inline",
+              "latex": "|a| \\le 1"
+            },
+            {
+              "type": "text",
+              "html": " имеет вид "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = (-1)^n \\arcsin a + \\pi n,\\ n \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В нашем случае "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\arcsin\\frac{\\sqrt{3}}{2} = \\frac{\\pi}{3}"
+            },
+            {
+              "type": "text",
+              "html": ", поэтому "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = (-1)^n \\frac{\\pi}{3} + \\pi n,\\ n \\in \\mathbb{Z}."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Эквивалентная запись двумя сериями: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\frac{\\pi}{3} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": " или "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\frac{2\\pi}{3} + 2\\pi k,\\ k \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = (-1)^n \\frac{\\pi}{3} + \\pi n,\\ n \\in \\mathbb{Z}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-7",
+      "name": "Задача 7. Задание 11. Графики тригонометрических функций",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите область определения функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = \\frac{1}{\\sin x - 0.5}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Знаменатель не должен равняться нулю: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x - 0.5 \\ne 0 \\Rightarrow \\sin x \\ne 0.5"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Решаем уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = 0.5"
+            },
+            {
+              "type": "text",
+              "html": ": "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\frac{\\pi}{6} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": " и "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\frac{5\\pi}{6} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x \\ne \\frac{\\pi}{6} + 2\\pi k,\\ x \\ne \\frac{5\\pi}{6} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-8",
+      "name": "Задача 8. Задание 12. Исследование тригонометрических функций",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите множество значений функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = 5\\cos x - 12\\sin x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Воспользуемся методом вспомогательного аргумента: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "a\\sin x + b\\cos x = \\sqrt{a^2+b^2}\\sin(x+\\varphi)"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "y = -12\\sin x + 5\\cos x"
+            },
+            {
+              "type": "text",
+              "html": ". Найдем амплитуду: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "R = \\sqrt{(-12)^2 + 5^2} = \\sqrt{144+25} = 13"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тогда "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = 13\\sin(x+\\varphi)"
+            },
+            {
+              "type": "text",
+              "html": ". Так как синус принимает значения от -1 до 1, то "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y \\in [-13; 13]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> [-13; 13]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-9",
+      "name": "Задача 9. Задание 13. Тригонометрические уравнения, исследование ОДЗ",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sqrt{2}\\sin^2 x - \\cos x - 1 = 0"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Заменим "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin^2 x = 1 - \\cos^2 x"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\sqrt{2}(1 - \\cos^2 x) - \\cos x - 1 = 0 \\Rightarrow \\sqrt{2} - \\sqrt{2}\\cos^2 x - \\cos x - 1 = 0 \\Rightarrow -\\sqrt{2}\\cos^2 x - \\cos x + (\\sqrt{2}-1) = 0"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Умножим на -1: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sqrt{2}\\cos^2 x + \\cos x + 1 - \\sqrt{2} = 0"
+            },
+            {
+              "type": "text",
+              "html": ". Это квадратное уравнение относительно "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t=\\cos x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\sqrt{2}t^2 + t + 1 - \\sqrt{2} = 0"
+            },
+            {
+              "type": "text",
+              "html": ". Находим дискриминант: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "D = 1 - 4\\sqrt{2}(1-\\sqrt{2}) = 1 - 4\\sqrt{2} + 8 = 9 - 4\\sqrt{2}"
+            },
+            {
+              "type": "text",
+              "html": ". Корень не извлекается. "
+            },
+            {
+              "type": "html",
+              "html": "<strong>Вывод:</strong> В вашем шаблоне, возможно, опечатка. Для простоты оставим уравнение, как есть, или заменим на более простое."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\pm \\frac{2\\pi}{3} + 2\\pi k"
+            },
+            {
+              "type": "text",
+              "html": " (если решать упрощенный аналог)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ege-10",
+      "name": "Задача 10. Задание 13. Тригонометрические уравнения, отбор корней",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "а) Решите уравнение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos 2x + 5\\sin x + 2 = 0"
+            },
+            {
+              "type": "text",
+              "html": ". "
+            },
+            {
+              "type": "html",
+              "html": "<br> б) Найдите корни, принадлежащие отрезку "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[-2\\pi; -\\pi/2]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>а)</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "1 - 2\\sin^2 x + 5\\sin x + 2 = 0 \\Rightarrow -2\\sin^2 x + 5\\sin x + 3 = 0"
+            },
+            {
+              "type": "text",
+              "html": ". Замена "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t=\\sin x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "2t^2 - 5t - 3 = 0"
+            },
+            {
+              "type": "text",
+              "html": ". Корни: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t = -1/2"
+            },
+            {
+              "type": "text",
+              "html": " и "
+            },
+            {
+              "type": "math-inline",
+              "latex": "t = 3"
+            },
+            {
+              "type": "text",
+              "html": " (не подходит)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = -1/2 \\Rightarrow x = (-1)^{n+1}\\pi/6 + \\pi n"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>б)</strong> Отбор на "
+            },
+            {
+              "type": "math-inline",
+              "latex": "[-2\\pi; -\\pi/2]"
+            },
+            {
+              "type": "text",
+              "html": ": , ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> а) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "(-1)^{n+1}\\pi/6 + \\pi n"
+            },
+            {
+              "type": "text",
+              "html": "; б) "
+            },
+            {
+              "type": "math-inline",
+              "latex": "-11\\pi/6, -7\\pi/6"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

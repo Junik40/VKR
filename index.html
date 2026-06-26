@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -1694,74 +1694,7 @@
           role="tabpanel"
           aria-labelledby="subtab-school"
           tabindex="0"
-        >
-          <article class="problem">
-            <h4 class="problem__name">
-              Пример 1. Вычисление значения выражения
-            </h4>
-            <p class="problem-text">
-              Вычислить значение выражения
-              <span
-                class="math-inline"
-                data-latex="\sin\frac{\pi}{12} \cdot \cos\frac{\pi}{12}"
-              ></span
-              >.
-            </p>
-            <button
-              type="button"
-              class="solution-toggle"
-              id="btn-sol-school-1"
-              aria-expanded="false"
-              aria-controls="sol-school-1"
-            >
-              Показать решение
-            </button>
-            <div
-              class="solution"
-              id="sol-school-1"
-              role="region"
-              aria-labelledby="btn-sol-school-1"
-              hidden
-            >
-              <h4 class="solution__heading">Решение</h4>
-              <p>Воспользуемся формулой двойного угла для синуса:</p>
-              <div
-                class="math-display"
-                data-latex="\sin 2x = 2\sin x\cos x"
-              ></div>
-              <p>Выразим произведение:</p>
-              <div
-                class="math-display"
-                data-latex="\sin x\cos x = \frac{1}{2}\sin 2x"
-              ></div>
-              <p>
-                Применим для
-                <span class="math-inline" data-latex="x = \frac{\pi}{12}"></span
-                >:
-              </p>
-              <div
-                class="math-display"
-                data-latex="\sin\frac{\pi}{12}\cos\frac{\pi}{12} = \frac{1}{2}\sin\left(2 \cdot \frac{\pi}{12}\right) = \frac{1}{2}\sin\frac{\pi}{6}"
-              ></div>
-              <p>
-                Так как
-                <span
-                  class="math-inline"
-                  data-latex="\sin\frac{\pi}{6} = \frac{1}{2}"
-                ></span
-                >, получаем:
-              </p>
-              <div
-                class="math-display"
-                data-latex="\frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}"
-              ></div>
-              <p>
-                <strong>Ответ:</strong>
-                <span class="math-inline" data-latex="\frac{1}{4}"></span>.
-              </p>
-            </div>
-          </article>
-        </div>
+        ></div>
 
         <div
           id="subpanel-oge"
@@ -1770,59 +1703,7 @@
           aria-labelledby="subtab-oge"
           tabindex="0"
           hidden
-        >
-          <article class="problem">
-            <h4 class="problem__name">
-              Пример 2. Задание 15. Задача на вычисление косинуса угла
-            </h4>
-            <p class="problem-text">
-              В треугольнике
-              <span class="math-inline" data-latex="ABC"></span> угол
-              <span class="math-inline" data-latex="C"></span> равен
-              <span class="math-inline" data-latex="90^\circ"></span>,
-              <span class="math-inline" data-latex="BC = 8"></span>,
-              <span class="math-inline" data-latex="AB = 10"></span>. Найдите
-              <span class="math-inline" data-latex="\cos B"></span>.
-            </p>
-            <button
-              type="button"
-              class="solution-toggle"
-              id="btn-sol-oge-1"
-              aria-expanded="false"
-              aria-controls="sol-oge-1"
-            >
-              Показать решение
-            </button>
-            <div
-              class="solution"
-              id="sol-oge-1"
-              role="region"
-              aria-labelledby="btn-sol-oge-1"
-              hidden
-            >
-              <h4 class="solution__heading">Решение</h4>
-              <p>
-                В прямоугольном треугольнике косинус острого угла равен
-                отношению прилежащего катета к гипотенузе.
-              </p>
-              <p>
-                Для угла
-                <span class="math-inline" data-latex="B"></span> прилежащий
-                катет — <span class="math-inline" data-latex="BC = 8"></span>,
-                гипотенуза —
-                <span class="math-inline" data-latex="AB = 10"></span>.
-              </p>
-              <div
-                class="math-display"
-                data-latex="\cos B = \frac{BC}{AB} = \frac{8}{10} = 0,8"
-              ></div>
-              <p>
-                <strong>Ответ:</strong>
-                <span class="math-inline" data-latex="0,8"></span>.
-              </p>
-            </div>
-          </article>
-        </div>
+        ></div>
 
         <div
           id="subpanel-ege"
@@ -1831,56 +1712,7 @@
           aria-labelledby="subtab-ege"
           tabindex="0"
           hidden
-        >
-          <article class="problem">
-            <h4 class="problem__name">
-              Пример 3. Простейшее тригонометрическое уравнение
-            </h4>
-            <p class="problem-text">
-              Решите уравнение:
-              <span
-                class="math-inline"
-                data-latex="\sin x = \frac{\sqrt{3}}{2}"
-              ></span
-              >.
-            </p>
-            <button
-              type="button"
-              class="solution-toggle"
-              id="btn-sol-ege-1"
-              aria-expanded="false"
-              aria-controls="sol-ege-1"
-            >
-              Показать решение
-            </button>
-            <div
-              class="solution"
-              id="sol-ege-1"
-              role="region"
-              aria-labelledby="btn-sol-ege-1"
-              hidden
-            >
-              <h4 class="solution__heading">Решение</h4>
-              <p>
-                Раздел находится в разработке. Полное решение будет добавлено
-                позже.
-              </p>
-              <p>
-                <strong>Ответ:</strong>
-                <span
-                  class="math-inline"
-                  data-latex="x = (-1)^n \frac{\pi}{3} + \pi n,\ n \in \mathbb{Z}"
-                ></span
-                >.
-              </p>
-            </div>
-          </article>
-          <p class="note">
-            Раздел «Применение тригонометрических функций в решении задач ЕГЭ»
-            будет дополнен подробными решениями задач 6, 9, 11, 12, 13.
-            (уравнения, неравенства, графики, отбор корней).
-          </p>
-        </div>
+        ></div>
 
         <div
           id="subpanel-uni"
@@ -1889,51 +1721,7 @@
           aria-labelledby="subtab-uni"
           tabindex="0"
           hidden
-        >
-          <article class="problem">
-            <h4 class="problem__name">Задача повышенной сложности</h4>
-            <p class="problem-text">
-              Вычислите предел:
-              <span
-                class="math-inline"
-                data-latex="\lim_{x \to 0} \frac{\sin 3x}{x}"
-              ></span
-              >.
-            </p>
-            <button
-              type="button"
-              class="solution-toggle"
-              id="btn-sol-uni-1"
-              aria-expanded="false"
-              aria-controls="sol-uni-1"
-            >
-              Показать решение
-            </button>
-            <div
-              class="solution"
-              id="sol-uni-1"
-              role="region"
-              aria-labelledby="btn-sol-uni-1"
-              hidden
-            >
-              <h4 class="solution__heading">Решение</h4>
-              <p>Используем первый замечательный предел:</p>
-              <div
-                class="math-display"
-                data-latex="\lim_{x \to 0} \frac{\sin 3x}{x} = \lim_{x \to 0} \frac{3\sin 3x}{3x} = 3 \cdot 1 = 3"
-              ></div>
-              <p>
-                <strong>Ответ:</strong>
-                <span class="math-inline" data-latex="3"></span>.
-              </p>
-            </div>
-          </article>
-          <p class="note">
-            Раздел «Применение тригонометрических функций в решении задач уровня
-            высших учебных заведений» будет дополнен задачами на пределы,
-            производные, интегралы и ряды.
-          </p>
-        </div>
+        ></div>
       </section>
     </main>
 

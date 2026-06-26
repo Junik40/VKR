@@ -1,0 +1,1239 @@
+{
+  "level": "oge",
+  "problems": [
+    {
+      "id": "oge-1",
+      "name": "Задача 1. Задание 15 (ОГЭ). Косинус острого угла",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "C"
+            },
+            {
+              "type": "text",
+              "html": " равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 8"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = 10"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos A"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В прямоугольном треугольнике косинус острого угла равен отношению прилежащего катета к гипотенузе."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Для угла "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A"
+            },
+            {
+              "type": "text",
+              "html": " прилежащий катет — "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": ". Найдём его по теореме Пифагора:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "AC^2 = AB^2 - BC^2 = 100 - 64 = 36 \\Rightarrow AC = 6"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\cos A = \\frac{AC}{AB} = \\frac{6}{10} = 0,6"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 0,6."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=356170\" target=\"_blank\">Решу ОГЭ: Задание № 356170</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-2",
+      "name": "Задача 2. Задание 15 (ОГЭ). Площадь треугольника",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " известно, что "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = 10"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC = 14"
+            },
+            {
+              "type": "text",
+              "html": ", а угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A = 150^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите площадь треугольника."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Площадь треугольника равна половине произведения двух сторон на синус угла между ними:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "S = \\frac{1}{2} \\cdot AB \\cdot AC \\cdot \\sin A"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = \\frac{1}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "S = \\frac{1}{2} \\cdot 10 \\cdot 14 \\cdot \\frac{1}{2} = 35"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 35."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=316346\" target=\"_blank\">Решу ОГЭ: Задание № 316346</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-3",
+      "name": "Задача 3. Задание 15 (ОГЭ). Теорема синусов",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A"
+            },
+            {
+              "type": "text",
+              "html": " равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "45^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "B"
+            },
+            {
+              "type": "text",
+              "html": " — "
+            },
+            {
+              "type": "math-inline",
+              "latex": "30^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 3\\sqrt{2}"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "По теореме синусов стороны пропорциональны синусам противолежащих углов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{AC}{\\sin B} = \\frac{BC}{\\sin A}"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{AC}{\\sin 30^\\circ} = \\frac{3\\sqrt{2}}{\\sin 45^\\circ}"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{AC}{1/2} = \\frac{3\\sqrt{2}}{\\sqrt{2}/2}"
+        },
+        {
+          "type": "math-display",
+          "latex": "2AC = \\frac{3\\sqrt{2} \\cdot 2}{\\sqrt{2}} = 6 \\Rightarrow AC = 3"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 3."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=356170\" target=\"_blank\">Решу ОГЭ: Задание № 356170</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-4",
+      "name": "Задача 4. Задание 15 (ОГЭ). Теорема косинусов",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = 5"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 6"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos B = \\frac{3}{5}"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "По теореме косинусов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "AC^2 = AB^2 + BC^2 - 2 \\cdot AB \\cdot BC \\cdot \\cos B"
+        },
+        {
+          "type": "math-display",
+          "latex": "AC^2 = 25 + 36 - 2 \\cdot 5 \\cdot 6 \\cdot \\frac{3}{5} = 61 - 36 = 25"
+        },
+        {
+          "type": "math-display",
+          "latex": "AC = 5"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 5."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=316346\" target=\"_blank\">Решу ОГЭ: Задание № 316346</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-5",
+      "name": "Задача 5. Задание 15 (ОГЭ). Высота в равнобедренном треугольнике",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В равнобедренном треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " с основанием "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": " боковая сторона "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = 13"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos A = \\frac{5}{13}"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите высоту, проведённую к основанию."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В равнобедренном треугольнике высота "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BH"
+            },
+            {
+              "type": "text",
+              "html": ", проведённая к основанию, является также медианой и биссектрисой."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Рассмотрим "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\triangle ABH"
+            },
+            {
+              "type": "text",
+              "html": ": "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\angle H = 90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", гипотенуза "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = 13"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos A = \\frac{AH}{AB} = \\frac{5}{13} \\Rightarrow AH = 5"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "По теореме Пифагора:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "BH^2 = AB^2 - AH^2 = 169 - 25 = 144 \\Rightarrow BH = 12"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 12."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=284233\" target=\"_blank\">Решу ОГЭ: Задание № 284233</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-6",
+      "name": "Задача 6. Задание 15 (ОГЭ). Радиус описанной окружности",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Боковая сторона равнобедренного треугольника равна "
+            },
+            {
+              "type": "math-inline",
+              "latex": "4"
+            },
+            {
+              "type": "text",
+              "html": ". Угол при вершине, противолежащий основанию, равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "120^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите диаметр окружности, описанной около этого треугольника."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Пусть в треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " равны "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB = AC = 4"
+            },
+            {
+              "type": "text",
+              "html": ", угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A = 120^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ". Найдём "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC"
+            },
+            {
+              "type": "text",
+              "html": " по теореме косинусов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "BC^2 = AB^2 + AC^2 - 2\\cdot AB\\cdot AC\\cdot\\cos 120^\\circ = 16 + 16 - 32\\cdot\\left(-\\tfrac{1}{2}\\right) = 48"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "BC = 4\\sqrt{3}"
+            },
+            {
+              "type": "text",
+              "html": ". По теореме синусов: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "2R = \\frac{BC}{\\sin A} = \\frac{4\\sqrt{3}}{\\sin 120^\\circ} = \\frac{4\\sqrt{3}}{\\sqrt{3}/2} = 8"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 8."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=316346\" target=\"_blank\">Решу ОГЭ: Задание № 316346</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-7",
+      "name": "Задача 7. Задание 15 (ОГЭ). Синус через стороны",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "C"
+            },
+            {
+              "type": "text",
+              "html": " равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", , "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 12"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin B"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдём гипотенузу "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB"
+            },
+            {
+              "type": "text",
+              "html": " по теореме Пифагора:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "AB^2 = AC^2 + BC^2 = 25 + 144 = 169 \\Rightarrow AB = 13"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Синус угла "
+            },
+            {
+              "type": "math-inline",
+              "latex": "B"
+            },
+            {
+              "type": "text",
+              "html": " равен отношению противолежащего катета "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": " к гипотенузе "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AB"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin B = \\frac{AC}{AB} = \\frac{5}{13} \\approx 0,3846"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{5}{13}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=284233\" target=\"_blank\">Решу ОГЭ: Задание № 284233</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-8",
+      "name": "Задача 8. Задание 15 (ОГЭ). Тангенс через стороны",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "C"
+            },
+            {
+              "type": "text",
+              "html": " равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", , "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 7"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\operatorname{tg} A"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдём катет "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": " по теореме Пифагора:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "AC^2 = AB^2 - BC^2 = 625 - 49 = 576 \\Rightarrow AC = 24"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тангенс угла "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A"
+            },
+            {
+              "type": "text",
+              "html": " равен отношению противолежащего катета "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC"
+            },
+            {
+              "type": "text",
+              "html": " к прилежащему "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\operatorname{tg} A = \\frac{BC}{AC} = \\frac{7}{24} \\approx 0,2917"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{7}{24}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=284233\" target=\"_blank\">Решу ОГЭ: Задание № 284233</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-9",
+      "name": "Задача 9. Задание 18 (ОГЭ). Тригонометрия на клетчатой бумаге",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "На клетчатой бумаге с размером клетки "
+            },
+            {
+              "type": "math-inline",
+              "latex": "1 \\times 1"
+            },
+            {
+              "type": "text",
+              "html": " изображён угол. Найдите тангенс этого угла."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тангенс угла на клетчатой бумаге можно найти как отношение противолежащего катета к прилежащему в прямоугольном треугольнике, построенном на сторонах угла."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Достроим угол до прямоугольного треугольника, опустив перпендикуляр из одной точки на горизонтальную линию. Если противолежащий катет равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "3"
+            },
+            {
+              "type": "text",
+              "html": " клетки, а прилежащий — "
+            },
+            {
+              "type": "math-inline",
+              "latex": "4"
+            },
+            {
+              "type": "text",
+              "html": " клетки, то:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\operatorname{tg}\\alpha = \\frac{3}{4} = 0,75"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 0,75."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/test?filter=all&category_id=14\" target=\"_blank\">Решу ОГЭ: Категория «Тригонометрия»</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oge-10",
+      "name": "Задача 10. Задание 15 (ОГЭ). Синус внешнего угла",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В треугольнике "
+            },
+            {
+              "type": "math-inline",
+              "latex": "ABC"
+            },
+            {
+              "type": "text",
+              "html": " угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "C"
+            },
+            {
+              "type": "text",
+              "html": " равен "
+            },
+            {
+              "type": "math-inline",
+              "latex": "90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ", , "
+            },
+            {
+              "type": "math-inline",
+              "latex": "BC = 5"
+            },
+            {
+              "type": "text",
+              "html": ". Найдите синус внешнего угла при вершине "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдём катет "
+            },
+            {
+              "type": "math-inline",
+              "latex": "AC"
+            },
+            {
+              "type": "text",
+              "html": " по теореме Пифагора:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "AC^2 = AB^2 - BC^2 = 169 - 25 = 144 \\Rightarrow AC = 12"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Синус внутреннего угла "
+            },
+            {
+              "type": "math-inline",
+              "latex": "A"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin A = \\frac{BC}{AB} = \\frac{5}{13}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Синус внешнего угла равен синусу внутреннего: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin(180^\\circ - A) = \\sin A"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{5}{13}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-oge.sdamgia.ru/problem?id=284233\" target=\"_blank\">Решу ОГЭ: Задание № 284233</a>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

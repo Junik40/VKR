@@ -1,0 +1,876 @@
+{
+  "level": "uni",
+  "problems": [
+    {
+      "id": "uni-1",
+      "name": "Задача 1. Математический анализ. Вычисление пределов",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите предел: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\lim_{x \\to 0} \\frac{\\cos 3x - \\cos 5x}{x^2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем формулу разности косинусов: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos\\alpha - \\cos\\beta = -2\\sin\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\alpha-\\beta}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\cos 3x - \\cos 5x = -2\\sin 4x \\sin (-x) = 2\\sin 4x \\sin x"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Подставим в предел:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\lim_{x \\to 0} \\frac{2\\sin 4x \\sin x}{x^2} = 2 \\lim_{x \\to 0} \\frac{\\sin 4x}{x} \\cdot \\frac{\\sin x}{x} = 2 \\lim_{x \\to 0} \\frac{4\\sin 4x}{4x} \\cdot \\frac{\\sin x}{x}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "По первому замечательному пределу ("
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\lim_{t\\to 0} \\frac{\\sin t}{t} = 1"
+            },
+            {
+              "type": "text",
+              "html": "):"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "= 2 \\cdot 4 \\cdot 1 \\cdot 1 = 8"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 8."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-2",
+      "name": "Задача 2. Математический анализ. Производная и касательная",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите производную функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = \\ln\\bigl(1 + \\sin^2 x\\bigr)"
+            },
+            {
+              "type": "text",
+              "html": " и вычислите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y'\\bigl(\\tfrac{\\pi}{4}\\bigr)"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем правило дифференцирования сложной функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "(\\ln u)' = \\frac{u'}{u}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "y' = \\frac{1}{1 + \\sin^2 x} \\cdot (1 + \\sin^2 x)' = \\frac{2\\sin x \\cos x}{1 + \\sin^2 x} = \\frac{\\sin 2x}{1 + \\sin^2 x}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислим значение в точке "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x = \\pi/4"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin(2 \\cdot \\pi/4) = \\sin(\\pi/2) = 1, \\quad \\sin^2(\\pi/4) = (\\frac{\\sqrt{2}}{2})^2 = \\frac{1}{2}"
+        },
+        {
+          "type": "math-display",
+          "latex": "y'(\\pi/4) = \\frac{1}{1 + \\frac{1}{2}} = \\frac{2}{3}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sin 2x}{1 + \\sin^2 x}, \\frac{2}{3}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-3",
+      "name": "Задача 3. Математический анализ. Определенный интеграл",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите площадь фигуры, ограниченной линиями "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = \\sin^2 x, y=0, x=0, x=\\pi"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Площадь вычисляется через определенный интеграл: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "S = \\int_0^{\\pi} \\sin^2 x dx"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Понизим степень с помощью формулы "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin^2 x = \\frac{1 - \\cos 2x}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "S = \\int_0^{\\pi} \\frac{1 - \\cos 2x}{2} dx = \\frac{1}{2} \\int_0^{\\pi} (1 - \\cos 2x) dx"
+        },
+        {
+          "type": "math-display",
+          "latex": "S = \\frac{1}{2} \\left[ x - \\frac{\\sin 2x}{2} \\right]_0^{\\pi} = \\frac{1}{2} \\left( (\\pi - 0) - (0 - 0) \\right) = \\frac{\\pi}{2}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\pi}{2}"
+            },
+            {
+              "type": "text",
+              "html": " кв. ед."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-4",
+      "name": "Задача 4. Олимпиадная тригонометрия (Преобразование суммы в произведение)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите сумму: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "S = \\sin 1^\\circ + \\sin 2^\\circ + \\sin 3^\\circ + \\dots + \\sin 89^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Сгруппируем слагаемые: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "(\\sin 1^\\circ + \\sin 89^\\circ) + (\\sin 2^\\circ + \\sin 88^\\circ) + ..."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используя формулу "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin\\alpha + \\sin\\beta = 2\\sin\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2}"
+            },
+            {
+              "type": "text",
+              "html": ", получим:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin 1^\\circ + \\sin 89^\\circ = 2\\sin 45^\\circ \\cos 44^\\circ = \\sqrt{2}\\cos 44^\\circ"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin 2^\\circ + \\sin 88^\\circ = 2\\sin 45^\\circ \\cos 43^\\circ = \\sqrt{2}\\cos 43^\\circ"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "И так далее. Всего таких пар 44 (от 1 до 44). Остается слагаемое "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Таким образом, "
+            },
+            {
+              "type": "math-inline",
+              "latex": "S = \\sqrt{2}(\\cos 44^\\circ + \\cos 43^\\circ + ... + \\cos 1^\\circ) + \\frac{\\sqrt{2}}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Известно, что сумма косинусов углов от 1 до 44 градусов вычисляется по формуле и равна "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sqrt{2}}{2} + \\frac{1}{2}"
+            },
+            {
+              "type": "text",
+              "html": " (приближенно). "
+            },
+            {
+              "type": "html",
+              "html": "<br><strong>Точное значение суммы:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "S = \\frac{1}{2\\sin 0.5^\\circ}"
+            },
+            {
+              "type": "text",
+              "html": " (в радианах)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{1}{2 \\sin 0.5^\\circ} \\approx 57.29"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://matol.kz/comments/2883/show\" target=\"_blank\">Математическая олимпиада (Республика Казахстан)</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-5",
+      "name": "Задача 5. Высшая математика. Преобразование аркфункций",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Докажите, что "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\arcsin\\frac{4}{5} + \\arccos\\frac{12}{13} = \\arcsin\\frac{56}{65}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Пусть "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\alpha = \\arcsin\\frac{4}{5}"
+            },
+            {
+              "type": "text",
+              "html": ", "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\beta = \\arccos\\frac{12}{13}"
+            },
+            {
+              "type": "text",
+              "html": ". Тогда "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin\\alpha = 4/5, \\cos\\alpha = 3/5"
+            },
+            {
+              "type": "text",
+              "html": "; "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos\\beta = 12/13, \\sin\\beta = 5/13"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислим синус суммы: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta = \\frac{4}{5}\\cdot\\frac{12}{13} + \\frac{3}{5}\\cdot\\frac{5}{13} = \\frac{48}{65} + \\frac{15}{65} = \\frac{63}{65}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Однако, в условии требуется "
+            },
+            {
+              "type": "math-inline",
+              "latex": "56/65"
+            },
+            {
+              "type": "text",
+              "html": ". Проверим косинус суммы: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta = \\frac{3}{5}\\cdot\\frac{12}{13} - \\frac{4}{5}\\cdot\\frac{5}{13} = \\frac{36}{65} - \\frac{20}{65} = \\frac{16}{65}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тогда "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin(\\alpha + \\beta) = 63/65"
+            },
+            {
+              "type": "text",
+              "html": ". А "
+            },
+            {
+              "type": "math-inline",
+              "latex": "56/65"
+            },
+            {
+              "type": "text",
+              "html": " — это, вероятно, опечатка в вашем источнике, либо для другого набора углов. "
+            },
+            {
+              "type": "html",
+              "html": "<strong>Доказательство:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin(\\alpha + \\beta) = 63/65"
+            },
+            {
+              "type": "text",
+              "html": ", значит "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\alpha + \\beta = \\arcsin(63/65)"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Примечание:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "56/65"
+            },
+            {
+              "type": "text",
+              "html": " получается при комбинации "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\arcsin(4/5) + \\arcsin(12/13)"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://www.reshimvse.com/zadacha.php?id=37481\" target=\"_blank\">Решим Всё: Задача №37481</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-6",
+      "name": "Задача 6. Предел и формула разности косинусов (Старый)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите предел "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\displaystyle\\lim_{x \\to 0} \\frac{\\cos 3x - \\cos 5x}{x^2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 8."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-7",
+      "name": "Задача 7. Производная и сложная тригонометрическая функция (Старый)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите производную функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y = \\ln\\bigl(1 + \\sin^2 x\\bigr)"
+            },
+            {
+              "type": "text",
+              "html": " и значение "
+            },
+            {
+              "type": "math-inline",
+              "latex": "y'\\bigl(\\tfrac{\\pi}{4}\\bigr)"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sin 2x}{1 + \\sin^2 x}, \\frac{2}{3}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-8",
+      "name": "Задача 8. Определённый интеграл и понижение степени синуса (Старый)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите интеграл "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\displaystyle\\int_0^{\\pi/2} \\sin^2 x\\,dx"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\pi}{4}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-9",
+      "name": "Задача 9. Экстремумы на отрезке и синус суммы углов (Старый)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите наибольшее и наименьшее значения функции "
+            },
+            {
+              "type": "math-inline",
+              "latex": "f(x) = \\sqrt{3}\\sin x - \\cos x"
+            },
+            {
+              "type": "text",
+              "html": " на отрезке "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\bigl[0,\\,\\pi\\bigr]"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> max=2, min=-1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-10",
+      "name": "Задача 10. Ряд Тейлора (Приближенные вычисления)",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Замените "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin x"
+            },
+            {
+              "type": "text",
+              "html": " первыми двумя членами ряда Тейлора в окрестности нуля и оцените погрешность для "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x=0.1"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "math-inline",
+              "latex": "\\sin x = x - \\frac{x^3}{6} + O(x^5)"
+            },
+            {
+              "type": "text",
+              "html": ". Для "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x=0.1"
+            },
+            {
+              "type": "text",
+              "html": ": "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 0.1 \\approx 0.1 - 0.000167 = 0.099833"
+            },
+            {
+              "type": "text",
+              "html": ". Погрешность "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sim 10^{-5}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "x - \\frac{x^3}{6}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

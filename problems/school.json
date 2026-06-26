@@ -1,0 +1,831 @@
+{
+  "level": "school",
+  "problems": [
+    {
+      "id": "school-1",
+      "name": "Задача 1. Вычисление синуса по косинусу",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin\\alpha"
+            },
+            {
+              "type": "text",
+              "html": ", если "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos\\alpha = \\frac{3}{5}"
+            },
+            {
+              "type": "text",
+              "html": " и "
+            },
+            {
+              "type": "math-inline",
+              "latex": "0^\\circ < \\alpha < 90^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем основное тригонометрическое тождество: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin^2\\alpha + \\cos^2\\alpha = 1"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin^2\\alpha = 1 - \\cos^2\\alpha = 1 - \\left(\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Так как угол "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\alpha"
+            },
+            {
+              "type": "text",
+              "html": " находится в I четверти, синус положителен:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin\\alpha = \\sqrt{\\frac{16}{25}} = \\frac{4}{5} = 0,8"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "0,8"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=26777\" target=\"_blank\">Решу ЕГЭ: Задание № 26777</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-2",
+      "name": "Задача 2. Вычисление тангенса по синусу и косинусу",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\operatorname{tg}\\alpha"
+            },
+            {
+              "type": "text",
+              "html": ", если "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin\\alpha = \\frac{5}{13}"
+            },
+            {
+              "type": "text",
+              "html": " и "
+            },
+            {
+              "type": "math-inline",
+              "latex": "90^\\circ < \\alpha < 180^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдём косинус через основное тождество:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\cos^2\\alpha = 1 - \\sin^2\\alpha = 1 - \\frac{25}{169} = \\frac{144}{169}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Угол во II четверти, косинус отрицателен: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\cos\\alpha = -\\frac{12}{13}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тангенс: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\operatorname{tg}\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha} = \\frac{5/13}{-12/13} = -\\frac{5}{12}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "-\\frac{5}{12}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://math-ege.sdamgia.ru/problem?id=505402\" target=\"_blank\">Решу ЕГЭ: Задание № 505402</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-3",
+      "name": "Задача 3. Вычисление значения выражения",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "12\\sin 11^\\circ \\cdot \\cos 11^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем формулу синуса двойного угла: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 2x = 2\\sin x\\cos x"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "12\\sin 11^\\circ \\cos 11^\\circ = 6 \\cdot (2\\sin 11^\\circ \\cos 11^\\circ) = 6\\sin 22^\\circ"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "6\\sin 22^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://school.umk-spo.biz/forum/treygoln\" target=\"_blank\">Банк заданий по тригонометрии</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-4",
+      "name": "Задача 4. Упрощение выражения с формулами приведения",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Упростите: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{3\\cos(\\pi - \\beta) + \\sin(\\frac{\\pi}{2} + \\beta)}{\\cos(\\beta + 3\\pi)}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Применим формулы приведения:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "math-inline",
+                "latex": "\\cos(\\pi - \\beta) = -\\cos\\beta"
+              }
+            ],
+            [
+              {
+                "type": "math-inline",
+                "latex": "\\sin(\\frac{\\pi}{2} + \\beta) = \\cos\\beta"
+              }
+            ],
+            [
+              {
+                "type": "math-inline",
+                "latex": "\\cos(\\beta + 3\\pi) = \\cos(\\beta + \\pi) = -\\cos\\beta"
+              },
+              {
+                "type": "text",
+                "html": " (так как период косинуса "
+              },
+              {
+                "type": "math-inline",
+                "latex": "2\\pi"
+              },
+              {
+                "type": "text",
+                "html": ")"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Подставляем:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{3(-\\cos\\beta) + \\cos\\beta}{-\\cos\\beta} = \\frac{-3\\cos\\beta + \\cos\\beta}{-\\cos\\beta} = \\frac{-2\\cos\\beta}{-\\cos\\beta} = 2"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> 2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://school.umk-spo.biz/forum/treygoln\" target=\"_blank\">Банк заданий по тригонометрии</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-5",
+      "name": "Задача 5. Формулы сложения",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите значение выражения: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 75^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Представим "
+            },
+            {
+              "type": "math-inline",
+              "latex": "75^\\circ = 45^\\circ + 30^\\circ"
+            },
+            {
+              "type": "text",
+              "html": " и используем формулу синуса суммы:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin 75^\\circ = \\sin(45^\\circ + 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ + \\cos 45^\\circ \\sin 30^\\circ"
+        },
+        {
+          "type": "math-display",
+          "latex": "= \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} = \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sqrt{6} + \\sqrt{2}}{4}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-6",
+      "name": "Задача 6. Тангенс разности",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\operatorname{tg} 50^\\circ - \\operatorname{tg} 20^\\circ}{1 + \\operatorname{tg} 50^\\circ \\operatorname{tg} 20^\\circ}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Узнаём формулу тангенса разности:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{\\operatorname{tg}\\alpha - \\operatorname{tg}\\beta}{1 + \\operatorname{tg}\\alpha \\operatorname{tg}\\beta} = \\operatorname{tg}(\\alpha - \\beta)"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "В нашем случае "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\alpha = 50^\\circ, \\beta = 20^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ":"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\frac{\\operatorname{tg} 50^\\circ - \\operatorname{tg} 20^\\circ}{1 + \\operatorname{tg} 50^\\circ \\operatorname{tg} 20^\\circ} = \\operatorname{tg}(50^\\circ - 20^\\circ) = \\operatorname{tg} 30^\\circ = \\frac{\\sqrt{3}}{3}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sqrt{3}}{3}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-7",
+      "name": "Задача 7. Преобразование суммы в произведение",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Упростите: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin 75^\\circ + \\sin 15^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем формулу суммы синусов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin\\alpha + \\sin\\beta = 2\\sin\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2}"
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin 75^\\circ + \\sin 15^\\circ = 2\\sin\\frac{75^\\circ+15^\\circ}{2}\\cos\\frac{75^\\circ-15^\\circ}{2} = 2\\sin 45^\\circ \\cos 30^\\circ"
+        },
+        {
+          "type": "math-display",
+          "latex": "= 2 \\cdot \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{6}}{2}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\frac{\\sqrt{6}}{2}"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-8",
+      "name": "Задача 8. Преобразование произведения в сумму",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Вычислите: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "4\\cos 20^\\circ \\cos 40^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Используем формулу произведения косинусов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\cos\\alpha\\cos\\beta = \\frac{1}{2}[\\cos(\\alpha+\\beta) + \\cos(\\alpha-\\beta)]"
+        },
+        {
+          "type": "math-display",
+          "latex": "4\\cos 20^\\circ \\cos 40^\\circ = 4 \\cdot \\frac{1}{2}[\\cos 60^\\circ + \\cos 20^\\circ] = 2\\left(\\frac{1}{2} + \\cos 20^\\circ\\right) = 1 + 2\\cos 20^\\circ"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> "
+            },
+            {
+              "type": "math-inline",
+              "latex": "1 + 2\\cos 20^\\circ"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-9",
+      "name": "Задача 9. Формула приведения для тангенса",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Найдите значение выражения: "
+            },
+            {
+              "type": "math-inline",
+              "latex": "30\\operatorname{tg}3^\\circ \\cdot \\operatorname{tg}87^\\circ - 43"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Заметим, что "
+            },
+            {
+              "type": "math-inline",
+              "latex": "87^\\circ = 90^\\circ - 3^\\circ"
+            },
+            {
+              "type": "text",
+              "html": ". По формуле приведения:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\operatorname{tg}87^\\circ = \\operatorname{tg}(90^\\circ - 3^\\circ) = \\operatorname{ctg}3^\\circ = \\frac{1}{\\operatorname{tg}3^\\circ}"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тогда:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "30\\operatorname{tg}3^\\circ \\cdot \\frac{1}{\\operatorname{tg}3^\\circ} - 43 = 30 \\cdot 1 - 43 = -13"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "html",
+              "html": "<strong>Ответ:</strong> -13."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Источник: "
+            },
+            {
+              "type": "html",
+              "html": "<a href=\"https://school.umk-spo.biz/forum/treygoln\" target=\"_blank\">Банк заданий по тригонометрии</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-10",
+      "name": "Задача 10. Доказательство тождества",
+      "statement": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Докажите, что "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin^4\\alpha - \\cos^4\\alpha = \\sin^2\\alpha - \\cos^2\\alpha"
+            },
+            {
+              "type": "text",
+              "html": "."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Разложим левую часть как разность квадратов:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin^4\\alpha - \\cos^4\\alpha = (\\sin^2\\alpha - \\cos^2\\alpha)(\\sin^2\\alpha + \\cos^2\\alpha)"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Так как "
+            },
+            {
+              "type": "math-inline",
+              "latex": "\\sin^2\\alpha + \\cos^2\\alpha = 1"
+            },
+            {
+              "type": "text",
+              "html": ", получаем:"
+            }
+          ]
+        },
+        {
+          "type": "math-display",
+          "latex": "\\sin^4\\alpha - \\cos^4\\alpha = \\sin^2\\alpha - \\cos^2\\alpha"
+        },
+        {
+          "type": "paragraph",
+          "parts": [
+            {
+              "type": "text",
+              "html": "Тождество доказано."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
